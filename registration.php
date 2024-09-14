@@ -29,7 +29,7 @@
 
         h1 {
             text-align: center; 
-            color: #4a34c8; 
+            color: #084913; 
             padding-block: 2rem;
             font-size: 2.5rem;
         }
@@ -84,7 +84,7 @@
         
         .form-button {
             background-color: #f8f7ff;
-            color: #9381ff;
+            color: #123d05;
             border: 0px;
             border-radius: 4px;
             padding: 1rem 2.4rem
@@ -92,6 +92,33 @@
     </style>
 </head>
 <body>
-    
+    <main>
+        <form action="submit.php" method="post">
+            <input type="text" name="fname" id="" placeholder="first name"class="grid-input"  required>
+            <input type="text" name="lname" id="" placeholder="last name"class="grid-input" required >
+            <input type="email" name="email" id="" placeholder="user email"class="grid-input" required >
+            <input type="password" name="password" id="" placeholder="password"class="grid-input" required >
+
+            <input type="date" name="date" placeholder="date" class="grid-input" required min="<?php echo date('Y-m-d') ?>">
+
+
+            <input type="submit" value="click me">
+            <input type="button" value="this is button">
+
+            <input type="reset" value="this is reset">
+            <br>
+            <input type="checkbox" name="checkbox[]" value="java"><label for="checkbox">java</label>
+            <input type="checkbox" name="checkbox[]" value="c++"><label for="checkbox">c++</label>
+            <input type="checkbox" name="checkbox[]" value="c#"><label for="checkbox">C#</label>
+            <input type="checkbox" name="checkbox[]" value="php"><label for="checkbox">php</label>
+            <br>
+            <input type="radio" name="year-level" value="1"><label for="year-level">1</label>
+            <input type="radio" name="year-level" value="2"><label for="year-level">2</label>
+            <input type="radio" name="year-level" value="3"><label for="year-level">3</label>
+            <input type="radio" name="year-level" value="4"><label for="year-level">4</label>
+
+
+        </form>
+    </main>
 </body>
 </html> 
